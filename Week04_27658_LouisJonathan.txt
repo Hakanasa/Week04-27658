@@ -1,0 +1,13 @@
+1. - Implicit Intent merupakan teknik passing data yang didalam percobaan ini apabila user menklik tombol Browse,
+    maka akan membuka default browser dari smartphone dan redirect menuju www.umn.ac.id sedangkan apabila kita ingin mengubah tujuan dari browser,
+    maka yang perlu diperhatikan pada awal adalah memiliki tag http:// apabila tidak ada, maka tidak akan berhasil.
+    - Explicit Intent juga digunakan untuk teknik passing data dalam percobaan ini, namun dalam hal ini terjadi pada 2 activity java yang berbeda.
+    - Percobaan dilakukan dengan activity 1 mengirim string data ke activity 2 dan sebaliknya lagi activity 2 dapat membalas balik ke activity 1. 
+    - Object mainIntent merupakan object yang merepresentasikan intent pemanggil activity 2 yakni MainAcitivity.
+    - Method getStringExtra mengambil data yang dibawa / dikirm mainIntent yang selanjutnya ditampilkan pada TextView.
+    - Method kirimBalik() wajib ada di activity 2 karena object Button kirimBalik ada di activity 2.
+    - Untuk membalas kembali tidak menggunakan startActivity(), namun menggunakan setResult() sebagai bentuk feedback dari activity yang dipanggil
+    - setResult() berkomunikasi dengan callback method onActivityResult() pada main activity 1 atau MainActivity.
+    - Fragment merupakan perilaku / bagian dari interface user dalam Activity. Atau dapat dikatakan sub aktivitas yang bisa digunakan kembali dalam aktivitas berbeda.
+
+    
